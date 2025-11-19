@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using CourseWork4Group.Logic;
 using CourseWork4Group.Models;
 using CourseWork4Group.Services;
 
@@ -411,6 +412,31 @@ namespace CourseWork4Group.Views
 
             dialog.ShowDialog();
         }
+
+        private void ShowTruthTableButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Вывод таблицы истинности в консоль
+            var truthTableBuilder = new TruthTableBuilder();
+            
+            try
+            {
+                // Открываем консоль для вывода
+                AllocConsole();
+                truthTableBuilder.PrintTruthTable();
+            }
+            catch (Exception ex)
+            {
+                // Если не удалось открыть консоль, показываем ошибку
+                MessageBox.Show($"Не удалось открыть консоль: {ex.Message}", 
+                              "Ошибка", 
+                              MessageBoxButton.OK, 
+                              MessageBoxImage.Error);
+            }
+        }
+
+        [System.Runtime.InteropServices.DllImport("kernel32.dll", SetLastError = true)]
+        [return: System.Runtime.InteropServices.MarshalAs(System.Runtime.InteropServices.UnmanagedType.Bool)]
+        private static extern bool AllocConsole();
     }
 }
 
