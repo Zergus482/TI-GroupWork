@@ -1,13 +1,6 @@
-﻿using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using CourseWork4Group.Views;
 
 namespace CourseWork4Group
 {
@@ -19,6 +12,37 @@ namespace CourseWork4Group
         public MainWindow()
         {
             InitializeComponent();
+            NavigateToGenerator();
         }
+
+        private void GeneratorButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToGenerator();
+        }
+
+        private void ManagerButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToManager();
+        }
+
+        private void NavigateToGenerator()
+        {
+            ContentArea.Content = new PasswordGeneratorView();
+            
+            // Обновляем стили кнопок
+            GeneratorButton.Style = (Style)FindResource("ActiveNavigationButtonStyle");
+            ManagerButton.Style = (Style)FindResource("NavigationButtonStyle");
+        }
+
+        private void NavigateToManager()
+        {
+            ContentArea.Content = new PasswordManagerView();
+            
+            // Обновляем стили кнопок
+            GeneratorButton.Style = (Style)FindResource("NavigationButtonStyle");
+            ManagerButton.Style = (Style)FindResource("ActiveNavigationButtonStyle");
+        }
+
+      
     }
 }

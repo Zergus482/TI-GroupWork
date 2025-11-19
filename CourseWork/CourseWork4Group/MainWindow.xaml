@@ -4,9 +4,80 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseWork4Group"
+        xmlns:views="clr-namespace:CourseWork4Group.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Менеджер паролей"
+        Height="767"
+        Width="1000"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+    
+    <Window.Resources>
+    </Window.Resources>
+    
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Боковое меню -->
+        <Border Grid.Column="0" 
+                Background="White"
+                BorderBrush="#E0E0E0"
+                BorderThickness="0,0,2,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <!-- Заголовок приложения -->
+                <StackPanel Grid.Row="0" 
+                           Margin="20,30,20,30"
+                           HorizontalAlignment="Center">
+                    <TextBlock Text="🔐"
+                              FontSize="48"
+                              HorizontalAlignment="Center"
+                              Margin="0,0,0,10"/>
+                    <TextBlock Text="Менеджер"
+                              FontSize="18"
+                              FontWeight="Bold"
+                              Foreground="#667eea"
+                              HorizontalAlignment="Center"/>
+                    <TextBlock Text="Паролей"
+                              FontSize="18"
+                              FontWeight="Bold"
+                              Foreground="#667eea"
+                              HorizontalAlignment="Center"/>
+                </StackPanel>
+                
+                <!-- Навигационные кнопки -->
+                <StackPanel Grid.Row="1" 
+                           Margin="10,0,10,0"
+                           VerticalAlignment="Top">
+                    <Button x:Name="GeneratorButton"
+                           Content="🔑 Генератор паролей"
+                           Style="{StaticResource ActiveNavigationButtonStyle}"
+                           Click="GeneratorButton_Click"/>
+                    <Button x:Name="ManagerButton"
+                           Content="📋 Менеджер паролей"
+                           Style="{StaticResource NavigationButtonStyle}"
+                           Click="ManagerButton_Click"/>
+                </StackPanel>
+                
+               
+               
+            </Grid>
+        </Border>
+        
+        <!-- Контентная область -->
+        <Grid Grid.Column="1" 
+             Margin="0">
+            <ContentControl x:Name="ContentArea">
+                <views:PasswordGeneratorView/>
+            </ContentControl>
+        </Grid>
     </Grid>
 </Window>
