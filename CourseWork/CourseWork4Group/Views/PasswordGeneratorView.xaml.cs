@@ -5,6 +5,8 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using CourseWork4Group.Models;
+using CourseWork4Group.Services;
 
 namespace CourseWork4Group.Views
 {
@@ -17,10 +19,12 @@ namespace CourseWork4Group.Views
         private const string UppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         private const string NumberChars = "0123456789";
         private const string SpecialChars = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+        private readonly PasswordService _passwordService;
 
         public PasswordGeneratorView()
         {
             InitializeComponent();
+            _passwordService = new PasswordService();
             UpdateSecurityIndicator();
             UpdatePreIndicator();
             UpdatePostIndicator();
@@ -340,6 +344,42 @@ namespace CourseWork4Group.Views
                               "Успешно", 
                               MessageBoxButton.OK, 
                               MessageBoxImage.Information);
+            }
+        }
+
+        private void SaveToManagerButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(PasswordTextBox.Text))
+            {
+                MessageBox.Show("Сначала сгенерируйте пароль!", 
+                              "Ошибка", 
+                              MessageBoxButton.OK, 
+                              MessageBoxImage.Warning);
+                return;
+            }
+
+            // Открываем диалоговое окно для сохранения пароля
+            var dialog = new SavePasswordDialog(PasswordTextBox.Text)
+            {
+                Owner = Window.GetWindow(this)
+            };
+
+            if (dialog.ShowDialog() == true && dialog.Result != null)
+            {
+                // Сохраняем пароль через сервис
+                _passwordService.AddPassword(dialog.Result);
+                
+                MessageBox.Show("Пароль успешно сохранен в менеджер паролей!", 
+                              "Успешно", 
+                              MessageBoxButton.OK, 
+                              MessageBoxImage.Information);
+                
+                // Обновляем менеджер паролей, если он открыт
+                var mainWindow = Window.GetWindow(this) as MainWindow;
+                if (mainWindow != null)
+                {
+                    mainWindow.RefreshPasswordManager();
+                }
             }
         }
     }

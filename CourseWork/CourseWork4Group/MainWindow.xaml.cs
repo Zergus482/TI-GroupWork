@@ -34,15 +34,32 @@ namespace CourseWork4Group
             ManagerButton.Style = (Style)FindResource("NavigationButtonStyle");
         }
 
+        private PasswordManagerView? _passwordManagerView;
+
         private void NavigateToManager()
         {
-            ContentArea.Content = new PasswordManagerView();
+            // Создаем или переиспользуем экземпляр менеджера паролей
+            if (_passwordManagerView == null)
+            {
+                _passwordManagerView = new PasswordManagerView();
+            }
+            
+            ContentArea.Content = _passwordManagerView;
             
             // Обновляем стили кнопок
             GeneratorButton.Style = (Style)FindResource("NavigationButtonStyle");
             ManagerButton.Style = (Style)FindResource("ActiveNavigationButtonStyle");
+            
+            // Обновляем список паролей при открытии менеджера
+            _passwordManagerView.RefreshPasswords();
         }
 
-      
+        public void RefreshPasswordManager()
+        {
+            if (_passwordManagerView != null && ContentArea.Content == _passwordManagerView)
+            {
+                _passwordManagerView.RefreshPasswords();
+            }
+        }
     }
 }

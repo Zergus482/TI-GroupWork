@@ -25,3 +25,5 @@ A:\Политех\ТИ_ужас\TI\CourseWork\CourseWork4Group\obj\Debug\net8.0-
 A:\Политех\ТИ_ужас\TI\CourseWork\CourseWork4Group\obj\Debug\net8.0-windows\Views\PasswordManagerView.g.cs
 A:\Политех\ТИ_ужас\TI\CourseWork\CourseWork4Group\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 A:\Политех\ТИ_ужас\TI\CourseWork\CourseWork4Group\obj\Debug\net8.0-windows\App.baml
+A:\Политех\ТИ_ужас\TI\CourseWork\CourseWork4Group\obj\Debug\net8.0-windows\Views\SavePasswordDialog.baml
+A:\Политех\ТИ_ужас\TI\CourseWork\CourseWork4Group\obj\Debug\net8.0-windows\Views\SavePasswordDialog.g.cs
