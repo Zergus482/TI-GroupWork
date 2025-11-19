@@ -152,6 +152,12 @@ namespace CourseWork4Group.Views
             PasswordTextBox.Text = password;
             UpdateSecurityIndicator(password);
             UpdatePostIndicator(); // Обновляем Post индикатор после генерации пароля
+            
+            // Показываем кнопку формального доказательства
+            if (VerifyButton != null)
+            {
+                VerifyButton.Visibility = Visibility.Visible;
+            }
         }
 
         private string GeneratePassword(int length)
@@ -340,10 +346,7 @@ namespace CourseWork4Group.Views
                 };
                 timer.Start();
 
-                MessageBox.Show("Пароль скопирован в буфер обмена!", 
-                              "Успешно", 
-                              MessageBoxButton.OK, 
-                              MessageBoxImage.Information);
+               
             }
         }
 
@@ -381,6 +384,32 @@ namespace CourseWork4Group.Views
                     mainWindow.RefreshPasswordManager();
                 }
             }
+        }
+
+        private void VerifyButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(PasswordTextBox.Text))
+            {
+                MessageBox.Show("Сначала сгенерируйте пароль!", 
+                              "Ошибка", 
+                              MessageBoxButton.OK, 
+                              MessageBoxImage.Warning);
+                return;
+            }
+
+            // Открываем диалоговое окно формальной верификации
+            var dialog = new VerificationDialog(
+                hasLowercase: IncludeLowercaseCheckBox.IsChecked == true,
+                hasUppercase: IncludeUppercaseCheckBox.IsChecked == true,
+                hasNumbers: IncludeNumbersCheckBox.IsChecked == true,
+                hasSpecial: IncludeSpecialCharsCheckBox.IsChecked == true,
+                length: (int)PasswordLengthSlider.Value,
+                generatedPassword: PasswordTextBox.Text)
+            {
+                Owner = Window.GetWindow(this)
+            };
+
+            dialog.ShowDialog();
         }
     }
 }
