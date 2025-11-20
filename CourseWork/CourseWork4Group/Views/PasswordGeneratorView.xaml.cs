@@ -21,11 +21,13 @@ namespace CourseWork4Group.Views
         private const string NumberChars = "0123456789";
         private const string SpecialChars = "!@#$%^&*()_+-=[]{}|;:,.<>?";
         private readonly PasswordService _passwordService;
+        private readonly PasswordGenerator _passwordGenerator;
 
         public PasswordGeneratorView()
         {
             InitializeComponent();
             _passwordService = new PasswordService();
+            _passwordGenerator = new PasswordGenerator();
             UpdateSecurityIndicator();
             UpdatePreIndicator();
             UpdatePostIndicator();
@@ -163,33 +165,12 @@ namespace CourseWork4Group.Views
 
         private string GeneratePassword(int length)
         {
-            StringBuilder charSet = new StringBuilder();
+            bool includeLowercase = IncludeLowercaseCheckBox.IsChecked == true;
+            bool includeUppercase = IncludeUppercaseCheckBox.IsChecked == true;
+            bool includeNumbers = IncludeNumbersCheckBox.IsChecked == true;
+            bool includeSpecialChars = IncludeSpecialCharsCheckBox.IsChecked == true;
 
-            if (IncludeLowercaseCheckBox.IsChecked == true)
-                charSet.Append(LowercaseChars);
-            if (IncludeUppercaseCheckBox.IsChecked == true)
-                charSet.Append(UppercaseChars);
-            if (IncludeNumbersCheckBox.IsChecked == true)
-                charSet.Append(NumberChars);
-            if (IncludeSpecialCharsCheckBox.IsChecked == true)
-                charSet.Append(SpecialChars);
-
-            if (charSet.Length == 0)
-                return string.Empty;
-
-            StringBuilder password = new StringBuilder(length);
-            char[] chars = charSet.ToString().ToCharArray();
-
-            // Используем криптографически стойкий генератор случайных чисел
-            byte[] data = new byte[length];
-            RandomNumberGenerator.Fill(data);
-
-            for (int i = 0; i < length; i++)
-            {
-                password.Append(chars[data[i] % chars.Length]);
-            }
-
-            return password.ToString();
+            return _passwordGenerator.GeneratePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSpecialChars);
         }
 
         private void UpdateSecurityIndicator(string? password = null)
