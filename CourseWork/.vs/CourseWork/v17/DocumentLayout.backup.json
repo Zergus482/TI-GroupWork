@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -103,17 +103,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SavePasswordDialog.xaml",
-              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\SavePasswordDialog.xaml",
-              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\SavePasswordDialog.xaml",
-              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\SavePasswordDialog.xaml",
-              "RelativeToolTip": "CourseWork4Group\\Views\\SavePasswordDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-19T14:41:33.884Z"
             },
             {
               "$type": "Document",
@@ -195,12 +184,23 @@
               "Title": "TruthTableBuilder.cs",
               "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Logic\\TruthTableBuilder.cs",
               "RelativeDocumentMoniker": "CourseWork4Group\\Logic\\TruthTableBuilder.cs",
-              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Logic\\TruthTableBuilder.cs*",
-              "RelativeToolTip": "CourseWork4Group\\Logic\\TruthTableBuilder.cs*",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAiwIcAAABaAAAAAAAAAA==",
+              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Logic\\TruthTableBuilder.cs",
+              "RelativeToolTip": "CourseWork4Group\\Logic\\TruthTableBuilder.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAUwIcAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T17:40:50.061Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SavePasswordDialog.xaml",
+              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\SavePasswordDialog.xaml",
+              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\SavePasswordDialog.xaml",
+              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\SavePasswordDialog.xaml",
+              "RelativeToolTip": "CourseWork4Group\\Views\\SavePasswordDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-19T14:41:33.884Z"
             },
             {
               "$type": "Document",
