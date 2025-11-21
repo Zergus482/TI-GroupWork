@@ -133,7 +133,7 @@ namespace CourseWork4Group.Logic
 
             Console.WriteLine("=".PadRight(80, '='));
             Console.WriteLine("ТАБЛИЦА ИСТИННОСТИ");
-            Console.WriteLine("Формула: greatpass = lilsymbols ∧ largesymbols ∧ (numbers ∨ SecSymbols)");
+            Console.WriteLine("Формула: greatpass = lilsymbols & largesymbols & (numbers | SecSymbols)");
             Console.WriteLine("=".PadRight(80, '='));
             Console.WriteLine();
 
