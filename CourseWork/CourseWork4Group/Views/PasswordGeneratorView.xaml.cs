@@ -1,3 +1,6 @@
+using CourseWork4Group.Logic;
+using CourseWork4Group.Models;
+using CourseWork4Group.Services;
 using System;
 using System.Linq;
 using System.Security.Cryptography;
@@ -5,9 +8,6 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using CourseWork4Group.Logic;
-using CourseWork4Group.Models;
-using CourseWork4Group.Services;
 
 namespace CourseWork4Group.Views
 {
@@ -155,12 +155,37 @@ namespace CourseWork4Group.Views
             PasswordTextBox.Text = password;
             UpdateSecurityIndicator(password);
             UpdatePostIndicator(); // Обновляем Post индикатор после генерации пароля
-            
-            // Показываем кнопку формального доказательства
-            if (VerifyButton != null)
-            {
-                VerifyButton.Visibility = Visibility.Visible;
-            }
+        }
+        
+        // Публичные методы для доступа к параметрам генерации
+        public string? GetGeneratedPassword()
+        {
+            return PasswordTextBox?.Text;
+        }
+        
+        public bool GetIncludeLowercase()
+        {
+            return IncludeLowercaseCheckBox?.IsChecked == true;
+        }
+        
+        public bool GetIncludeUppercase()
+        {
+            return IncludeUppercaseCheckBox?.IsChecked == true;
+        }
+        
+        public bool GetIncludeNumbers()
+        {
+            return IncludeNumbersCheckBox?.IsChecked == true;
+        }
+        
+        public bool GetIncludeSpecial()
+        {
+            return IncludeSpecialCharsCheckBox?.IsChecked == true;
+        }
+        
+        public int GetPasswordLength()
+        {
+            return PasswordLengthSlider != null ? (int)PasswordLengthSlider.Value : 16;
         }
 
         private string GeneratePassword(int length)
@@ -367,57 +392,6 @@ namespace CourseWork4Group.Views
                 }
             }
         }
-
-        private void VerifyButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(PasswordTextBox.Text))
-            {
-                MessageBox.Show("Сначала сгенерируйте пароль!", 
-                              "Ошибка", 
-                              MessageBoxButton.OK, 
-                              MessageBoxImage.Warning);
-                return;
-            }
-
-            // Открываем диалоговое окно формальной верификации
-            var dialog = new VerificationDialog(
-                hasLowercase: IncludeLowercaseCheckBox.IsChecked == true,
-                hasUppercase: IncludeUppercaseCheckBox.IsChecked == true,
-                hasNumbers: IncludeNumbersCheckBox.IsChecked == true,
-                hasSpecial: IncludeSpecialCharsCheckBox.IsChecked == true,
-                length: (int)PasswordLengthSlider.Value,
-                generatedPassword: PasswordTextBox.Text)
-            {
-                Owner = Window.GetWindow(this)
-            };
-
-            dialog.ShowDialog();
-        }
-
-        private void ShowTruthTableButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Вывод таблицы истинности в консоль
-            var truthTableBuilder = new TruthTableBuilder();
-            
-            try
-            {
-                // Открываем консоль для вывода
-                AllocConsole();
-                truthTableBuilder.PrintTruthTable();
-            }
-            catch (Exception ex)
-            {
-                // Если не удалось открыть консоль, показываем ошибку
-                MessageBox.Show($"Не удалось открыть консоль: {ex.Message}", 
-                              "Ошибка", 
-                              MessageBoxButton.OK, 
-                              MessageBoxImage.Error);
-            }
-        }
-
-        [System.Runtime.InteropServices.DllImport("kernel32.dll", SetLastError = true)]
-        [return: System.Runtime.InteropServices.MarshalAs(System.Runtime.InteropServices.UnmanagedType.Bool)]
-        private static extern bool AllocConsole();
     }
 }
 

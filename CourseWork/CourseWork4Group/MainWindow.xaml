@@ -7,6 +7,8 @@
         xmlns:views="clr-namespace:CourseWork4Group.Views"
         mc:Ignorable="d"
         Title="Менеджер паролей"
+        MinHeight="950"
+        MinWidth="1000"
         Height="1000"
         Width="1000"
         WindowStartupLocation="CenterScreen"
@@ -17,8 +19,8 @@
     
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250" MinWidth="200"/>
+            <ColumnDefinition Width="*" MinWidth="600"/>
         </Grid.ColumnDefinitions>
         
         <!-- Боковое меню -->
@@ -26,56 +28,73 @@
                 Background="White"
                 BorderBrush="#E0E0E0"
                 BorderThickness="0,0,2,0">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                
-                <!-- Заголовок приложения -->
-                <StackPanel Grid.Row="0" 
-                           Margin="20,30,20,30"
-                           HorizontalAlignment="Center">
-                    <TextBlock Text="🔐"
-                              FontSize="48"
-                              HorizontalAlignment="Center"
-                              Margin="0,0,0,10"/>
-                    <TextBlock Text="Менеджер"
-                              FontSize="18"
-                              FontWeight="Bold"
-                              Foreground="#667eea"
-                              HorizontalAlignment="Center"/>
-                    <TextBlock Text="Паролей"
-                              FontSize="18"
-                              FontWeight="Bold"
-                              Foreground="#667eea"
-                              HorizontalAlignment="Center"/>
-                </StackPanel>
-                
-                <!-- Навигационные кнопки -->
-                <StackPanel Grid.Row="1" 
-                           Margin="10,0,10,0"
-                           VerticalAlignment="Top">
-                    <Button x:Name="GeneratorButton"
-                           Content="🔑 Генератор паролей"
-                           Style="{StaticResource ActiveNavigationButtonStyle}"
-                           Click="GeneratorButton_Click"/>
-                    <Button x:Name="ManagerButton"
-                           Content="📋 Менеджер паролей"
-                           Style="{StaticResource NavigationButtonStyle}"
-                           Click="ManagerButton_Click"/>
-                </StackPanel>
-                
-               
-               
-            </Grid>
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                         HorizontalScrollBarVisibility="Disabled">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Заголовок приложения -->
+                    <StackPanel Grid.Row="0" 
+                               Margin="20,30,20,30"
+                               HorizontalAlignment="Center">
+                        <TextBlock Text="🔐"
+                                  FontSize="48"
+                                  HorizontalAlignment="Center"
+                                  Margin="0,0,0,10"/>
+                        <TextBlock Text="Менеджер"
+                                  FontSize="18"
+                                  FontWeight="Bold"
+                                  Foreground="#667eea"
+                                  HorizontalAlignment="Center"/>
+                        <TextBlock Text="Паролей"
+                                  FontSize="18"
+                                  FontWeight="Bold"
+                                  Foreground="#667eea"
+                                  HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    
+                    <!-- Навигационные кнопки -->
+                    <StackPanel Grid.Row="1" 
+                               Margin="10,0,10,20"
+                               VerticalAlignment="Top">
+                        <Button x:Name="GeneratorButton"
+                               Content="🔑 Генератор паролей"
+                               Style="{StaticResource ActiveNavigationButtonStyle}"
+                               Click="GeneratorButton_Click"
+                               MinHeight="50"/>
+                        <Button x:Name="ManagerButton"
+                               Content="📋 Менеджер паролей"
+                               Style="{StaticResource NavigationButtonStyle}"
+                               Click="ManagerButton_Click"
+                               MinHeight="50"/>
+                        
+                        <!-- Дополнительные кнопки -->
+                        <Button x:Name="TruthTableButton"
+                               Content="📊 Построить таблицу истинности"
+                               Style="{StaticResource NavigationButtonStyle}"
+                               Click="TruthTableButton_Click"
+                               MinHeight="50"
+                               Margin="0,10,0,0"/>
+                        <Button x:Name="VerifyButton"
+                               Content="🔬 Доказать корректность"
+                               Style="{StaticResource NavigationButtonStyle}"
+                               Click="VerifyButton_Click"
+                               MinHeight="50"/>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
         </Border>
         
         <!-- Контентная область -->
         <Grid Grid.Column="1" 
              Margin="0">
-            <ContentControl x:Name="ContentArea">
+            <ContentControl x:Name="ContentArea"
+                           MinHeight="500"
+                           MinWidth="600">
                 <views:PasswordGeneratorView/>
             </ContentControl>
         </Grid>

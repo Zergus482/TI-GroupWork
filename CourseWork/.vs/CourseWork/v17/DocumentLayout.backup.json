@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\views\\passwordgeneratorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\views\\passwordgeneratorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\logic\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\logic\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\views\\passwordmanagerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\views\\passwordmanagerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\views\\verificationdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\logic\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\logic\\passwordgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
       "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     },
@@ -45,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\views\\savepassworddialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\views\\savepassworddialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\views\\passwordgeneratorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\views\\passwordgeneratorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|solutionrelative:coursework4group\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B90E221-2710-4BD7-80D9-CA5067F93073}|CourseWork4Group\\CourseWork4Group.csproj|a:\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0442\u0438_\u0443\u0436\u0430\u0441\\ti\\coursework\\coursework4group\\views\\savepassworddialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,56 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CourseWork4Group",
-              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\CourseWork4Group.csproj",
-              "RelativeDocumentMoniker": "CourseWork4Group\\CourseWork4Group.csproj",
-              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\CourseWork4Group.csproj",
-              "RelativeToolTip": "CourseWork4Group\\CourseWork4Group.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-21T13:39:47.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VerificationDialog.xaml.cs",
-              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\VerificationDialog.xaml.cs",
-              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\VerificationDialog.xaml.cs",
-              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\VerificationDialog.xaml.cs",
-              "RelativeToolTip": "CourseWork4Group\\Views\\VerificationDialog.xaml.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T13:36:49.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PasswordManagerView.xaml.cs",
-              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordManagerView.xaml.cs",
-              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\PasswordManagerView.xaml.cs",
-              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordManagerView.xaml.cs",
-              "RelativeToolTip": "CourseWork4Group\\Views\\PasswordManagerView.xaml.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAmwIcAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T14:49:12.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SavePasswordDialog.xaml.cs",
-              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\SavePasswordDialog.xaml.cs",
-              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\SavePasswordDialog.xaml.cs",
-              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\SavePasswordDialog.xaml.cs",
-              "RelativeToolTip": "CourseWork4Group\\Views\\SavePasswordDialog.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T14:44:16.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "PasswordEntry.cs",
               "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Models\\PasswordEntry.cs",
               "RelativeDocumentMoniker": "CourseWork4Group\\Models\\PasswordEntry.cs",
@@ -163,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "PasswordService.cs",
               "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Services\\PasswordService.cs",
               "RelativeDocumentMoniker": "CourseWork4Group\\Services\\PasswordService.cs",
@@ -175,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "TestRunner.cs",
               "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Logic\\TestRunner.cs",
               "RelativeDocumentMoniker": "CourseWork4Group\\Logic\\TestRunner.cs",
@@ -187,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "PasswordGeneratorTests.cs",
               "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Logic\\PasswordGeneratorTests.cs",
               "RelativeDocumentMoniker": "CourseWork4Group\\Logic\\PasswordGeneratorTests.cs",
@@ -199,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "CourseWork4Group\\ClassDiagram1.cd",
@@ -210,19 +161,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CourseWork4Group\\MainWindow.xaml",
+              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\MainWindow.xaml*",
+              "RelativeToolTip": "CourseWork4Group\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-19T12:21:58.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VerificationDialog.xaml.cs",
+              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\VerificationDialog.xaml.cs",
+              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\VerificationDialog.xaml.cs",
+              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\VerificationDialog.xaml.cs",
+              "RelativeToolTip": "CourseWork4Group\\Views\\VerificationDialog.xaml.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T13:36:49.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PasswordGeneratorView.xaml.cs",
+              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordGeneratorView.xaml.cs",
+              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\PasswordGeneratorView.xaml.cs",
+              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordGeneratorView.xaml.cs",
+              "RelativeToolTip": "CourseWork4Group\\Views\\PasswordGeneratorView.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T12:43:30.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PasswordGenerator.cs",
               "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Logic\\PasswordGenerator.cs",
               "RelativeDocumentMoniker": "CourseWork4Group\\Logic\\PasswordGenerator.cs",
               "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Logic\\PasswordGenerator.cs",
               "RelativeToolTip": "CourseWork4Group\\Logic\\PasswordGenerator.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwBkAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:46:35.497Z"
+              "WhenOpened": "2025-11-21T11:46:35.497Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
+              "Title": "SavePasswordDialog.xaml.cs",
+              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\SavePasswordDialog.xaml.cs",
+              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\SavePasswordDialog.xaml.cs",
+              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\SavePasswordDialog.xaml.cs",
+              "RelativeToolTip": "CourseWork4Group\\Views\\SavePasswordDialog.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T14:44:16.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PasswordManagerView.xaml.cs",
+              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordManagerView.xaml.cs",
+              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\PasswordManagerView.xaml.cs",
+              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordManagerView.xaml.cs",
+              "RelativeToolTip": "CourseWork4Group\\Views\\PasswordManagerView.xaml.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAmwJEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T14:49:12.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CourseWork4Group",
+              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\CourseWork4Group.csproj",
+              "RelativeDocumentMoniker": "CourseWork4Group\\CourseWork4Group.csproj",
+              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\CourseWork4Group.csproj",
+              "RelativeToolTip": "CourseWork4Group\\CourseWork4Group.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-21T13:39:47.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "VerificationDialog.xaml",
               "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\VerificationDialog.xaml",
               "RelativeDocumentMoniker": "CourseWork4Group\\Views\\VerificationDialog.xaml",
@@ -230,18 +254,6 @@
               "RelativeToolTip": "CourseWork4Group\\Views\\VerificationDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-19T16:44:12.487Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PasswordGeneratorView.xaml.cs",
-              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordGeneratorView.xaml.cs",
-              "RelativeDocumentMoniker": "CourseWork4Group\\Views\\PasswordGeneratorView.xaml.cs",
-              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordGeneratorView.xaml.cs",
-              "RelativeToolTip": "CourseWork4Group\\Views\\PasswordGeneratorView.xaml.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAcwBgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T12:43:30.467Z"
             },
             {
               "$type": "Document",
@@ -263,18 +275,8 @@
               "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\Views\\PasswordGeneratorView.xaml",
               "RelativeToolTip": "CourseWork4Group\\Views\\PasswordGeneratorView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-19T13:06:19.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "CourseWork4Group\\MainWindow.xaml",
-              "ToolTip": "A:\\\u041F\u043E\u043B\u0438\u0442\u0435\u0445\\\u0422\u0418_\u0443\u0436\u0430\u0441\\TI\\CourseWork\\CourseWork4Group\\MainWindow.xaml",
-              "RelativeToolTip": "CourseWork4Group\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-19T12:21:58.749Z"
+              "WhenOpened": "2025-11-19T13:06:19.053Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

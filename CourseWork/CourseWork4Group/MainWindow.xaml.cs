@@ -1,5 +1,7 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
+using CourseWork4Group.Logic;
 using CourseWork4Group.Views;
 
 namespace CourseWork4Group
@@ -9,6 +11,9 @@ namespace CourseWork4Group
     /// </summary>
     public partial class MainWindow : Window
     {
+        private PasswordGeneratorView? _passwordGeneratorView;
+        private PasswordManagerView? _passwordManagerView;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,14 +32,18 @@ namespace CourseWork4Group
 
         private void NavigateToGenerator()
         {
-            ContentArea.Content = new PasswordGeneratorView();
+            // Создаем или переиспользуем экземпляр генератора паролей
+            if (_passwordGeneratorView == null)
+            {
+                _passwordGeneratorView = new PasswordGeneratorView();
+            }
+            
+            ContentArea.Content = _passwordGeneratorView;
             
             // Обновляем стили кнопок
             GeneratorButton.Style = (Style)FindResource("ActiveNavigationButtonStyle");
             ManagerButton.Style = (Style)FindResource("NavigationButtonStyle");
         }
-
-        private PasswordManagerView? _passwordManagerView;
 
         private void NavigateToManager()
         {
@@ -61,5 +70,70 @@ namespace CourseWork4Group
                 _passwordManagerView.RefreshPasswords();
             }
         }
+
+        private void TruthTableButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Вывод таблицы истинности в консоль
+            var truthTableBuilder = new TruthTableBuilder();
+            
+            try
+            {
+                // Открываем консоль для вывода
+                AllocConsole();
+                truthTableBuilder.PrintTruthTable();
+            }
+            catch (Exception ex)
+            {
+                // Если не удалось открыть консоль, показываем ошибку
+                MessageBox.Show($"Не удалось открыть консоль: {ex.Message}", 
+                              "Ошибка", 
+                              MessageBoxButton.OK, 
+                              MessageBoxImage.Error);
+            }
+        }
+
+        private void VerifyButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Проверяем, что генератор паролей открыт и пароль сгенерирован
+            if (_passwordGeneratorView == null || ContentArea.Content != _passwordGeneratorView)
+            {
+                MessageBox.Show("Сначала откройте генератор паролей и сгенерируйте пароль!", 
+                              "Ошибка", 
+                              MessageBoxButton.OK, 
+                              MessageBoxImage.Warning);
+                NavigateToGenerator();
+                return;
+            }
+
+            // Получаем параметры из генератора паролей
+            var generatorView = _passwordGeneratorView;
+            
+            if (string.IsNullOrEmpty(generatorView.GetGeneratedPassword()))
+            {
+                MessageBox.Show("Сначала сгенерируйте пароль!", 
+                              "Ошибка", 
+                              MessageBoxButton.OK, 
+                              MessageBoxImage.Warning);
+                return;
+            }
+
+            // Открываем диалоговое окно формальной верификации
+            var dialog = new VerificationDialog(
+                hasLowercase: generatorView.GetIncludeLowercase(),
+                hasUppercase: generatorView.GetIncludeUppercase(),
+                hasNumbers: generatorView.GetIncludeNumbers(),
+                hasSpecial: generatorView.GetIncludeSpecial(),
+                length: generatorView.GetPasswordLength(),
+                generatedPassword: generatorView.GetGeneratedPassword())
+            {
+                Owner = this
+            };
+
+            dialog.ShowDialog();
+        }
+
+        [System.Runtime.InteropServices.DllImport("kernel32.dll", SetLastError = true)]
+        [return: System.Runtime.InteropServices.MarshalAs(System.Runtime.InteropServices.UnmanagedType.Bool)]
+        private static extern bool AllocConsole();
     }
 }
