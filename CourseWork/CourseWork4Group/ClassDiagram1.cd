@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CourseWork4Group.Logic.PasswordGenerator">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAAAAABAAAAABAAAAAAAAAAAAgAAAAIAAAAA=</HashCode>
+      <FileName>Logic\PasswordGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseWork4Group.Logic.PasswordGeneratorTests">
+    <Position X="9.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAACQAAEABEQYIIAgAIAGQBQAAACAgACAAACQAAAAA=</HashCode>
+      <FileName>Logic\PasswordGeneratorTests.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_generator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CourseWork4Group.Logic.TestRunner">
+    <Position X="11.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\TestRunner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseWork4Group.Logic.TruthTableBuilder">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="CourseWork4Group.Logic.TruthTableBuilder.TruthTableRow" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Logic\TruthTableBuilder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAEAIAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Logic\TruthTableBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseWork4Group.Models.PasswordEntry">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAACAAAAAAAAAAQAACAAAQAAAAAAA=</HashCode>
+      <FileName>Models\PasswordEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseWork4Group.Services.PasswordService">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAACAAAgAAACQAAgAAAAAAAAAAAAAAAIAEAA=</HashCode>
+      <FileName>Services\PasswordService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseWork4Group.Views.PasswordGeneratorView">
+    <Position X="2.75" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAQAQQABAAAABgAAAABAABAAQQwAAAAhAAAAAAAQAA=</HashCode>
+      <FileName>Views\PasswordGeneratorView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_passwordGenerator" />
+      <Field Name="_passwordService" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CourseWork4Group.Views.PasswordManagerView">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAACAAAAAAACABABEACAAAAAABAgAAAEAAAA=</HashCode>
+      <FileName>Views\PasswordManagerView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CourseWork4Group.Views.SavePasswordDialog">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SavePasswordDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Result" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CourseWork4Group.Views.VerificationDialog">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAgAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Views\VerificationDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CourseWork4Group.MainWindow">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAABAAAAAAQAAAAAAAEADAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_passwordManagerView" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
