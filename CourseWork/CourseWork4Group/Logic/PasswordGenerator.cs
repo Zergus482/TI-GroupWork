@@ -53,7 +53,7 @@ namespace CourseWork4Group.Logic
 
             for (int i = 0; i < length; i++)
             {
-                password.Append(chars[data[i] % chars.Length]);
+                password.Append(chars[data[i] % chars.Length]); 
             }
 
             return password.ToString();
