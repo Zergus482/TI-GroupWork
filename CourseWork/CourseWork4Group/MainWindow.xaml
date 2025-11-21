@@ -19,7 +19,7 @@
     
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250" MinWidth="200"/>
+            <ColumnDefinition Width="280" MinWidth="250"/>
             <ColumnDefinition Width="*" MinWidth="600"/>
         </Grid.ColumnDefinitions>
         
@@ -74,16 +74,26 @@
                         
                         <!-- Дополнительные кнопки -->
                         <Button x:Name="TruthTableButton"
-                               Content="📊 Построить таблицу истинности"
                                Style="{StaticResource NavigationButtonStyle}"
                                Click="TruthTableButton_Click"
-                               MinHeight="50"
-                               Margin="0,10,0,0"/>
+                               MinHeight="60"
+                               Margin="0,10,0,0"
+                               Padding="15,12">
+                            <TextBlock Text="📊 Построить таблицу истинности"
+                                      FontSize="13"
+                                      TextWrapping="Wrap"
+                                      TextAlignment="Left"/>
+                        </Button>
                         <Button x:Name="VerifyButton"
-                               Content="🔬 Доказать корректность"
                                Style="{StaticResource NavigationButtonStyle}"
                                Click="VerifyButton_Click"
-                               MinHeight="50"/>
+                               MinHeight="60"
+                               Padding="15,12">
+                            <TextBlock Text="🔬 Доказать корректность"
+                                      FontSize="13"
+                                      TextWrapping="Wrap"
+                                      TextAlignment="Left"/>
+                        </Button>
                     </StackPanel>
                 </Grid>
             </ScrollViewer>
