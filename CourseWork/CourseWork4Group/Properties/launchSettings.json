@@ -1,7 +1,8 @@
 {
   "profiles": {
     "CourseWork4Group": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "-t"
     }
   }
 }

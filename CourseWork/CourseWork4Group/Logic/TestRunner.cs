@@ -20,8 +20,13 @@ namespace CourseWork4Group.Logic
             // Открываем консоль для вывода
             AllocConsole();
             
-            var tests = new PasswordGeneratorTests();
-            tests.RunAllTests();
+            // Запускаем тесты генерации паролей
+            var passwordTests = new PasswordGeneratorTests();
+            passwordTests.RunAllTests();
+            
+            // Запускаем тесты таблицы истинности, ДНФ и КНФ
+            var truthTableTests = new TruthTableTests();
+            truthTableTests.RunAllTests();
             
             Console.WriteLine("\nНажмите любую клавишу для продолжения...");
             Console.ReadKey();

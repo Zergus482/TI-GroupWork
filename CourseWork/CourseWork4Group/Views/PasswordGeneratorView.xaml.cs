@@ -248,7 +248,7 @@ namespace CourseWork4Group.Views
             // Длина пароля
             if (password.Length >= 12)
             {
-                score += 25;
+                score += 40;
                 details.AppendLine("✓ Достаточная длина пароля (12+ символов)");
             }
             else if (password.Length >= 8)
