@@ -22,6 +22,7 @@
 ## ▶️ Как запустить
 
 1. Склонируйте этот репозиторий
+   bash  git clone https://github.com/Zergus482/TI-GroupWork.git
 2. Откройте решение в Visual Studio:
    TI/CourseWork/CourseWork.sln
 3. Соберите и запустите проект через Visual Studio (или с помощью CLI):
