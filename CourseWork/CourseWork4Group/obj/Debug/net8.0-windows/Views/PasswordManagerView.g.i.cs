@@ -76,7 +76,7 @@ namespace CourseWork4Group.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CourseWork4Group;component/views/passwordmanagerview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CourseWork4Group;V1.0.0.0;component/views/passwordmanagerview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\PasswordManagerView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
